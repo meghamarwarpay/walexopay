@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+}
+
+.headerfix {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+@media (max-width: 730px) {
+  .d-md-none {
+    display: block !important;
+  }
+
+  .d-md-flex {
+    display: none !important;
+  }
+
+  .d-block {
+    display: block;
+  }
+
+  .d-none {
+    display: none;
+  }
+}
+.bestseller-product {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+ li a{
+text-decoration: none !important;
+/* color:#fff !important; */
+}
+a{
+  text-decoration: none !important;
+}
+/* .btn:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: #dc3545;
+  border-color: #ea868f;
+} */
+.btnprimary{
+  background-color: rgb(78 95 219) !important;
+  border-color: rgb(65, 69, 102) !important;
+}
+.btnprimary:hover {
+  background-color: rgb(78 95 219) !important;
+  border-color: rgb(101, 112, 196) !important;
+}
+
+.bg-dangers {
+  --bs-bg-opacity: 1;
+  background-color: rgb(78 95 219) !important;
+}
